@@ -5,6 +5,10 @@ markdown:  kramdown
 permalink: /:title
 plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
 title:		   "Colton Behannon"
