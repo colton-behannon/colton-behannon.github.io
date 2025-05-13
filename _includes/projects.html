@@ -1,6 +1,8 @@
 <section>
-    <div class="project-container">
-      {% for project in site.data.settings.projects %}
+  <div class="project-container">
+    {% for section in site.data.settings.projects %}
+      <h2>{{ section.category }}</h2>
+      {% for project in section.items %}
         <a href="{{ site.github.url }}/projects/{{ project.url }}">
           <div class="project-unit" data-folder="{{ site.github.url }}/projects/{{ project.url }}" style="background-image: url({{ site.github.url }}/assets/img/projects/{{ project.url }}/thumbnail.jpg)">
             <div class="project-overlay">
@@ -9,5 +11,6 @@
           </div>
         </a>
       {% endfor %}
-    </div>
-  </section>
+    {% endfor %}
+  </div>
+</section>

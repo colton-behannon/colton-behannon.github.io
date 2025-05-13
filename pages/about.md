@@ -4,6 +4,12 @@ title: About
 permalink: /about
 ---
 
-# Portfolio Jekyll Theme
+## About me
 
-This is a personal portfolio theme that I built from the ground up, using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). You can [check out the demo](lenpaul.github.io/portfolio-jekyll-theme/), and [fork the repository](https://github.com/LeNPaul/portfolio-jekyll-theme/fork), to get started.
+# Background
+
+My background is in traditional data science but has pivoted to generative AI for the last two years. I am currently building cool applications utilizing the latest LLM breakthroughs.
+
+# Hobbies
+
+I enjoy playing video games (Overwatch, League of Legends, Stardew Valley), golf, and hanging out with my friends and family. Lately I have been rapidly consuming all of Brandon Sanderson's works in the Cosmere.

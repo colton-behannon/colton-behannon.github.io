@@ -1,0 +1,112 @@
+.home-tiles
+  display: flex
+  flex-wrap: wrap
+  gap: 2.5em
+  justify-content: center
+  margin: 2.5em 0
+
+.home-tile
+  box-shadow: 0 8px 32px 0 rgba(60,60,90,0.18), 0 1.5px 8px 0 rgba(60,60,90,0.10)
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s
+  border-radius: 18px
+  overflow: hidden
+  background: none
+  position: relative
+  min-width: 340px
+  max-width: 700px
+  margin-bottom: 1.5em
+  cursor: pointer
+  width: 700px
+  height: 300px
+  &:hover
+    transform: translateY(-8px) scale(1.025)
+    box-shadow: 0 16px 48px 0 rgba(60,60,90,0.22), 0 3px 16px 0 rgba(60,60,90,0.13)
+    img
+      filter: brightness(0.55) blur(0.5px)
+    .tile-title
+      color: $accent-color
+      text-shadow: 0 4px 16px rgba(0,0,0,0.7)
+    .tile-desc
+      color: #fffde7
+      text-shadow: 0 2px 12px rgba(0,0,0,0.7)
+  .tile-title
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: white
+    font-size: 2.3em
+    font-weight: 700
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5)
+    width: 90%
+    pointer-events: none
+    z-index: 2
+    letter-spacing: 0.04em
+    font-family: 'Roboto Slab', serif
+  .tile-desc
+    position: absolute
+    left: 50%
+    bottom: 18%
+    transform: translateX(-50%)
+    color: #f3f3f3
+    font-size: 1.18em
+    font-weight: 400
+    text-shadow: 0 1px 6px rgba(0,0,0,0.45)
+    width: 90%
+    pointer-events: none
+    z-index: 2
+    font-family: 'Roboto', sans-serif
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 0
+    display: block
+    margin: 0
+    filter: brightness(0.7)
+    box-shadow: none
+
+// Add a subtle animated gradient background to the page
+body
+  background: linear-gradient(120deg, #f8fafc 0%, #e3e9f7 100%) fixed
+
+// Add a pop to the main heading
+.home-intro h1
+  font-family: 'Roboto Slab', serif
+  font-size: 3.2em
+  color: #2d3a4a
+  letter-spacing: 0.03em
+  text-shadow: 0 2px 12px rgba(80,120,180,0.08)
+  margin-bottom: 0.3em
+
+// Add a soft border and shadow to the intro section
+.home-intro
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background: #fff
+  border-radius: 18px
+  box-shadow: 0 4px 24px 0 rgba(60,60,90,0.08)
+  padding: 3em 2em 2.5em 2em
+  margin: 2.5em auto 0 auto
+  max-width: 900px
+  width: 90%
+  border: none
+  position: relative
+  z-index: 2
+  left: auto
+  right: auto
+  transform: none
+  text-align: center
+  
+  h1
+    margin-bottom: 0.5em
+  p
+    margin-top: 0
+    margin-bottom: 0
+    color: #5a6a7a
+    font-size: 1.18em
+    line-height: 1.6
+    max-width: 700px
+
